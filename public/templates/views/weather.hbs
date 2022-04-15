@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ {{>headerlinks}}
+</head>
+<body>
+      {{>navbar}}
+     <form style = "text-align:center;margin:auto;margin-top:20px">
+       <div class="form-group">
+         <label >Enter your city</label>
+         <input type = "text" class="form-control" id="cityName" aria-describedby="emailHelp" placeholder="Enter City">
+       </div>
+       <button type="submit" value = "search" id = "submitted" class="btn btn-primary">Check</button>
+      </form>
+      <div class="card" style="width: 18rem;margin:auto">
+        <div id = "statusicon">
+            <img class="card-img-top"  src = "images/default.png">
+        </div>
+        <div class="card-body">
+        <p class="card-text" id = "city-info">Your Result would Appear here</p>
+        <h1 id = "temp"></h1>
+      </div>
+      </div>
+
+ {{>footer}}
+ <script src = "js/main.js"></script>
+</body>
+</html>
